@@ -1,5 +1,5 @@
 spec_version: 2
-description: A Sample "Hello World" JavaScript based API Backend running on AWS Lambda 
+description: A Sample "Hello World" JavaScript based API Backend running on AWS Lambda
 instructions:
   source:
     store: Torque-Samples
@@ -26,15 +26,15 @@ grains:
       agent:
         name: Sample-Agent
       inputs:
-      - aws_region: eu-west-1
-      - lambda_bucket_name: torque-samples-storage
-      - lambda_iam_role: torque-lambda-exec
+        - aws_region: eu-west-1
+        - lambda_bucket_name: quali-samples-storage
+        - lambda_iam_role: torque-lambda-exec
       env-vars: []
       outputs:
-      - base_url
-      - function_name
-      - lambda_bucket_name
-      - test_output
+        - base_url
+        - function_name
+        - lambda_bucket_name
+        - test_output
 
   Health Check:
     kind: shell
